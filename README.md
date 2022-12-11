@@ -60,6 +60,8 @@
     -   `login`
         -   게임 및 유저 정보를 얻기 위해 이메일, 비밀번호, 닉네임을 봇 DM으로 차례대로 입력하여 유비소프트에 로그인 후 성공적으로 로그인 하면 유저 정보를 ./data/users.json에 저장
         -   비밀번호는 cryptography 모듈을 통해 암호화를 진행하여 저장
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906734-c82c5032-14fa-4379-b2e1-ca312099eca0.png)
+
     -   `user` {name}
         -   login을 통해 등록한 유저의 정보를 간단하게 확인 가능
     -   `search` {name}

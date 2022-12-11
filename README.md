@@ -60,12 +60,16 @@
     -   `login`
         -   게임 및 유저 정보를 얻기 위해 이메일, 비밀번호, 닉네임을 봇 DM으로 차례대로 입력하여 유비소프트에 로그인 후 성공적으로 로그인 하면 유저 정보를 ./data/users.json에 저장
         -   비밀번호는 cryptography 모듈을 통해 암호화를 진행하여 저장
-        -   ![image](https://user-images.githubusercontent.com/113341200/206906734-c82c5032-14fa-4379-b2e1-ca312099eca0.png)
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906801-eb66f0c3-bb82-4e77-bd59-9b4961ef31f0.png)
 
     -   `user` {name}
         -   login을 통해 등록한 유저의 정보를 간단하게 확인 가능
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906831-d84702e5-7633-49f3-8d2c-7f5eaed1293b.png)
+
     -   `search` {name}
         -   [R6Tracker 사이트](https://r6.tracker.network/) 에서 웹크롤링을 통해 유저를 확인하여 링크를 보냄
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906839-fb5a068a-f7ff-4c20-b2af-4ce8fcf299f0.png)
+
 
 -   게임 정보 명령어
 
@@ -73,14 +77,20 @@
         -   각 맵을 승률이 높은 순으로 정렬하여 보여줌
         -   mode는 전체, 랭크, 캐주얼 등 게임 모드를 구별함 (default: all)
         -   count는 전체 승률 몇위까지 보여줄 것인지 알려줌 (default: 5)
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906864-02288665-6af2-44c8-a8b5-53ea23f8cc65.png)
+
     -   `rank` {name} {y} {s}
         -   y와 s로 랭크 시즌을 선택하여 해당 시즌 전적 정보를 보여줌
         -   12월 11일 기준 최신 시즌 Y7S4 업데이트 후 해당 시즌은 api 작동이 안되어 이전 시즌인 Y7S3를 기본값으로 함
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906883-48e80d79-7879-483c-9482-4d7b9b1760c6.png)
+
     -   `operator` {name} {mode} {count} {operator_type}
         -   각 오퍼레이터(캐릭터)를 킬뎃이 높은 순으로 정렬하여 킬뎃, 승률, 플레이 횟수를 보여줌
         -   mode는 전체, 랭크, 캐주얼 등 게임 모드를 구별함 (default: all)
         -   count는 전체 승률 몇위까지 보여줄 것인지 알려줌 (default: 5)
         -   operator_type는 전체, 공격, 방어 오퍼레이터를 결정함 (default: all)
+        -   ![image](https://user-images.githubusercontent.com/113341200/206906895-d5efc750-44ce-4a62-8425-bc9c8d9d5769.png)
+
 
 ## 프로젝트 사용 예시
 
